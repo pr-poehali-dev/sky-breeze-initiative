@@ -5,10 +5,10 @@ import type { SectionProps } from "@/types"
 
 const bgImages: Record<string, string> = {
   hero: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/783475a6-c5ed-4385-93f7-93b0feec95cd.png',
-  about: 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1800&q=80',
-  features: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1800&q=80',
-  testimonials: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1800&q=80',
-  join: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80',
+  about: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/38599f67-0923-4dca-ae10-526c62d325e2.jpg',
+  features: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/9ef660d4-dda5-4186-9b2f-45378c24fa8e.jpg',
+  testimonials: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/2fa3842e-8d2a-492b-87bb-9cfc9a5b60a2.jpg',
+  join: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/38599f67-0923-4dca-ae10-526c62d325e2.jpg',
 }
 
 export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText }: SectionProps) {
