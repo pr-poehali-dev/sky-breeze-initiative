@@ -30,4 +30,9 @@ export const sections = [
     showButton: true,
     buttonText: 'Оставить заявку'
   },
+  {
+    id: 'map',
+    title: 'Как нас найти',
+    showMap: true,
+  },
 ]
