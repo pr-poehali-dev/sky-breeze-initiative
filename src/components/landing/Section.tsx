@@ -8,7 +8,7 @@ const bgImages: Record<string, string> = {
   about: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/38599f67-0923-4dca-ae10-526c62d325e2.jpg',
   features: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/9ef660d4-dda5-4186-9b2f-45378c24fa8e.jpg',
   testimonials: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/2fa3842e-8d2a-492b-87bb-9cfc9a5b60a2.jpg',
-  join: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/38599f67-0923-4dca-ae10-526c62d325e2.jpg',
+  join: 'https://cdn.poehali.dev/projects/c2eb121f-5b98-42f5-bddf-5c67110503e7/bucket/3f2b2caf-3d21-4b77-8288-2bcf3a3320e2.png',
 }
 
 export default function Section({ id, title, subtitle, content, isActive, showButton, buttonText }: SectionProps) {
