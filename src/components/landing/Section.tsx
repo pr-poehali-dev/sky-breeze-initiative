@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
+import Icon from "@/components/ui/icon"
 import type { SectionProps } from "@/types"
 
 const bgImages: Record<string, string> = {
@@ -88,6 +89,31 @@ export default function Section({ id, title, subtitle, content, isActive, showBu
           </motion.div>
         )}
       </div>
+
+      {/* Адреса в нижнем левом углу последней секции */}
+      {id === 'join' && (
+        <motion.div
+          className="absolute bottom-8 left-8 md:left-20 lg:left-32 flex flex-col sm:flex-row gap-4 sm:gap-8 z-10"
+          initial={{ opacity: 0 }}
+          animate={isActive ? { opacity: 1 } : {}}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <div className="flex items-start gap-2 text-gray-300 text-sm">
+            <Icon name="Building2" size={15} className="mt-0.5 text-[#16a34a] shrink-0" />
+            <div>
+              <div className="text-white font-medium">Офис</div>
+              <div>г. Уфа, ул. Пушкина, 45/1</div>
+            </div>
+          </div>
+          <div className="flex items-start gap-2 text-gray-300 text-sm">
+            <Icon name="Warehouse" size={15} className="mt-0.5 text-[#16a34a] shrink-0" />
+            <div>
+              <div className="text-white font-medium">Склад</div>
+              <div>г. Уфа, ул. Центральная, 53</div>
+            </div>
+          </div>
+        </motion.div>
+      )}
     </section>
   )
 }
