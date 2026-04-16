@@ -44,11 +44,14 @@ export default function LandingPage() {
 
   return (
     <Layout>
-      <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 md:px-16 py-4 bg-[#F8F7F4]/80 backdrop-blur-sm border-b border-gray-100">
-        <span className="font-semibold text-[#1A1A1A] tracking-tight text-lg">СеткаПро</span>
+      <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 md:px-16 py-4 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+        <div className="flex items-center gap-2">
+          <span className="font-bold text-[#1A1A1A] tracking-tight text-lg">УСЗ</span>
+          <span className="hidden md:block text-gray-400 text-sm font-normal">Уфимский Сеточный Завод</span>
+        </div>
         <a
           href="tel:+79961001023"
-          className="flex items-center gap-2 bg-[#1A1A1A] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#333] transition-colors"
+          className="flex items-center gap-2 bg-[#16a34a] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#15803d] transition-colors shadow-sm shadow-green-200"
         >
           <Icon name="Phone" size={15} />
           8 996 100-10-23
@@ -59,14 +62,14 @@ export default function LandingPage() {
           <button
             key={section.id}
             className={`w-2.5 h-2.5 rounded-full my-2 transition-all ${
-              index === activeSection ? 'bg-[#1A1A1A] scale-150' : 'bg-gray-300'
+              index === activeSection ? 'bg-white scale-150' : 'bg-white/40'
             }`}
             onClick={() => handleNavClick(index)}
           />
         ))}
       </nav>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-0.5 bg-[#1A1A1A] origin-left z-30"
+        className="fixed top-0 left-0 right-0 h-0.5 bg-[#16a34a] origin-left z-30"
         style={{ scaleX }}
       />
       <div
