@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon"
 import type { SectionProps } from "@/types"
 
 const bgImages: Record<string, string> = {
-  hero: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1800&q=80',
+  hero: 'https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?w=1800&q=80',
   about: 'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1800&q=80',
   features: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1800&q=80',
   testimonials: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1800&q=80',
