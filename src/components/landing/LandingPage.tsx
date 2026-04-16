@@ -3,6 +3,7 @@ import { motion, useScroll, useSpring } from 'framer-motion'
 import Section from './Section'
 import Layout from './Layout'
 import { sections } from './sections'
+import Icon from '@/components/ui/icon'
 
 export default function LandingPage() {
   const [activeSection, setActiveSection] = useState(0)
@@ -43,6 +44,16 @@ export default function LandingPage() {
 
   return (
     <Layout>
+      <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 md:px-16 py-4 bg-[#F8F7F4]/80 backdrop-blur-sm border-b border-gray-100">
+        <span className="font-semibold text-[#1A1A1A] tracking-tight text-lg">СеткаПро</span>
+        <a
+          href="tel:+79961001023"
+          className="flex items-center gap-2 bg-[#1A1A1A] text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-[#333] transition-colors"
+        >
+          <Icon name="Phone" size={15} />
+          8 996 100-10-23
+        </a>
+      </header>
       <nav className="fixed top-0 right-0 h-screen flex flex-col justify-center z-30 p-4">
         {sections.map((section, index) => (
           <button
