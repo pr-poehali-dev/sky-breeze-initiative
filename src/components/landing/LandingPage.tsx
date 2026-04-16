@@ -44,9 +44,9 @@ export default function LandingPage() {
 
   return (
     <Layout>
-      <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 md:px-16 py-4 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+      <header className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-8 md:px-16 py-4 bg-black border-b border-white/10">
         <div className="flex items-center gap-2">
-          <span className="font-bold text-[#1A1A1A] tracking-tight text-lg">УСЗ</span>
+          <span className="font-bold text-[#e11d48] tracking-tight text-lg">УСЗ</span>
           <span className="hidden md:block text-gray-400 text-sm font-normal">Уфимский Сеточный Завод</span>
         </div>
         <a
